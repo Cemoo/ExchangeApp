@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */; };
+		52BAE52520FF609800F0D72F /* CryptoCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAE52420FF609800F0D72F /* CryptoCoinViewModel.swift */; };
 		52E14E3320F89DA400CA1F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E3220F89DA400CA1F95 /* AppDelegate.swift */; };
 		52E14E3520F89DA400CA1F95 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E3420F89DA400CA1F95 /* MainVC.swift */; };
 		52E14E3820F89DA400CA1F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E14E3620F89DA400CA1F95 /* Main.storyboard */; };
@@ -18,9 +20,56 @@
 		52E14E5120F8C83900CA1F95 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E4D20F8C83800CA1F95 /* Interactor.swift */; };
 		52E14E5220F8C83900CA1F95 /* DismissMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E4E20F8C83900CA1F95 /* DismissMenuAnimator.swift */; };
 		52E14E5920F8E9CA00CA1F95 /* ExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E5820F8E9CA00CA1F95 /* ExchangeCell.swift */; };
+		52E14E5B20FCA6BA00CA1F95 /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E5A20FCA6BA00CA1F95 /* ExchangeViewModel.swift */; };
+		52E14E5F20FCAD4F00CA1F95 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E5E20FCAD4F00CA1F95 /* BaseRequest.swift */; };
+		52E14E6120FCB1B100CA1F95 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E6020FCB1B100CA1F95 /* Global.swift */; };
+		52E14E6320FCB51600CA1F95 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E6220FCB51600CA1F95 /* Loading.swift */; };
+		52E14E6C20FCE3C200CA1F95 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E14E6B20FCE3C200CA1F95 /* NotificationCenter.framework */; };
+		52E14E6F20FCE3C200CA1F95 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E6E20FCE3C200CA1F95 /* TodayViewController.swift */; };
+		52E14E7220FCE3C200CA1F95 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E14E7020FCE3C200CA1F95 /* MainInterface.storyboard */; };
+		52E14E7620FCE3C200CA1F95 /* ExchangeAppWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52E14E6A20FCE3C200CA1F95 /* ExchangeAppWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52E14E7D20FDD58A00CA1F95 /* UIViewController-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */; };
+		52E14E7F20FDDFE700CA1F95 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E7E20FDDFE700CA1F95 /* MenuCell.swift */; };
+		52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */; };
+		52E14E8820FDE63400CA1F95 /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */; };
+		52E14E8920FDE63400CA1F95 /* UITextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8320FDE63400CA1F95 /* UITextFieldExt.swift */; };
+		52E14E8A20FDE63400CA1F95 /* UINavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8420FDE63400CA1F95 /* UINavigationControllerExt.swift */; };
+		52E14E8B20FDE63400CA1F95 /* UITextViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8520FDE63400CA1F95 /* UITextViewDesignable.swift */; };
+		52E14E8C20FDE63400CA1F95 /* UITextFieldDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8620FDE63400CA1F95 /* UITextFieldDesignable.swift */; };
+		52E14E8E20FDFB0200CA1F95 /* FilterButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8D20FDFB0200CA1F95 /* FilterButtton.swift */; };
+		52E14E9220FE126300CA1F95 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9120FE126300CA1F95 /* Models.swift */; };
+		52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */; };
+		52E14E9620FE182F00CA1F95 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */; };
+		627E27C583736F373AFC6489 /* Pods_ExchangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		52E14E7420FCE3C200CA1F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E14E2720F89DA400CA1F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E14E6920FCE3C200CA1F95;
+			remoteInfo = ExchangeAppWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52E14E7A20FCE3C200CA1F95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52E14E7620FCE3C200CA1F95 /* ExchangeAppWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketViewModel.swift; sourceTree = "<group>"; };
+		52BAE52420FF609800F0D72F /* CryptoCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinViewModel.swift; sourceTree = "<group>"; };
 		52E14E2F20F89DA400CA1F95 /* ExchangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E14E3220F89DA400CA1F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E14E3420F89DA400CA1F95 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -34,6 +83,30 @@
 		52E14E4D20F8C83800CA1F95 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		52E14E4E20F8C83900CA1F95 /* DismissMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissMenuAnimator.swift; sourceTree = "<group>"; };
 		52E14E5820F8E9CA00CA1F95 /* ExchangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCell.swift; sourceTree = "<group>"; };
+		52E14E5A20FCA6BA00CA1F95 /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
+		52E14E5E20FCAD4F00CA1F95 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		52E14E6020FCB1B100CA1F95 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		52E14E6220FCB51600CA1F95 /* Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		52E14E6A20FCE3C200CA1F95 /* ExchangeAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExchangeAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E14E6B20FCE3C200CA1F95 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		52E14E6E20FCE3C200CA1F95 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		52E14E7120FCE3C200CA1F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		52E14E7320FCE3C200CA1F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Ext.swift"; sourceTree = "<group>"; };
+		52E14E7E20FDDFE700CA1F95 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDesignable.swift; sourceTree = "<group>"; };
+		52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
+		52E14E8320FDE63400CA1F95 /* UITextFieldExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExt.swift; sourceTree = "<group>"; };
+		52E14E8420FDE63400CA1F95 /* UINavigationControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExt.swift; sourceTree = "<group>"; };
+		52E14E8520FDE63400CA1F95 /* UITextViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewDesignable.swift; sourceTree = "<group>"; };
+		52E14E8620FDE63400CA1F95 /* UITextFieldDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldDesignable.swift; sourceTree = "<group>"; };
+		52E14E8D20FDFB0200CA1F95 /* FilterButtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtton.swift; sourceTree = "<group>"; };
+		52E14E9120FE126300CA1F95 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldViewModel.swift; sourceTree = "<group>"; };
+		52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.release.xcconfig"; sourceTree = "<group>"; };
+		DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +114,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627E27C583736F373AFC6489 /* Pods_ExchangeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E14E6720FCE3C200CA1F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E14E6C20FCE3C200CA1F95 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0023A3CA92F1EECAE12C258D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */,
+				C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37CE9B248394F3803D0B77AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */,
+				52E14E6B20FCE3C200CA1F95 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52E14E2620F89DA400CA1F95 = {
 			isa = PBXGroup;
 			children = (
 				52E14E3120F89DA400CA1F95 /* ExchangeApp */,
+				52E14E6D20FCE3C200CA1F95 /* ExchangeAppWidget */,
 				52E14E3020F89DA400CA1F95 /* Products */,
+				0023A3CA92F1EECAE12C258D /* Pods */,
+				37CE9B248394F3803D0B77AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				52E14E2F20F89DA400CA1F95 /* ExchangeApp.app */,
+				52E14E6A20FCE3C200CA1F95 /* ExchangeAppWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +170,8 @@
 		52E14E3120F89DA400CA1F95 /* ExchangeApp */ = {
 			isa = PBXGroup;
 			children = (
+				52E14E8020FDE60800CA1F95 /* Designables */,
+				52E14E7B20FDD56C00CA1F95 /* Extension */,
 				52E14E5520F8DB7100CA1F95 /* View */,
 				52E14E5420F8DB6B00CA1F95 /* ViewModel */,
 				52E14E5320F8DB5E00CA1F95 /* Model */,
@@ -75,6 +181,7 @@
 				52E14E3920F89DA500CA1F95 /* Assets.xcassets */,
 				52E14E3B20F89DA500CA1F95 /* LaunchScreen.storyboard */,
 				52E14E3E20F89DA500CA1F95 /* Info.plist */,
+				52E14E8D20FDFB0200CA1F95 /* FilterButtton.swift */,
 			);
 			path = ExchangeApp;
 			sourceTree = "<group>";
@@ -93,6 +200,10 @@
 		52E14E5320F8DB5E00CA1F95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52E14E6220FCB51600CA1F95 /* Loading.swift */,
+				52E14E6020FCB1B100CA1F95 /* Global.swift */,
+				52E14E5E20FCAD4F00CA1F95 /* BaseRequest.swift */,
+				52E14E9120FE126300CA1F95 /* Models.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +211,11 @@
 		52E14E5420F8DB6B00CA1F95 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				52E14E5A20FCA6BA00CA1F95 /* ExchangeViewModel.swift */,
+				52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */,
+				52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */,
+				52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */,
+				52BAE52420FF609800F0D72F /* CryptoCoinViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -126,8 +242,40 @@
 			isa = PBXGroup;
 			children = (
 				52E14E5820F8E9CA00CA1F95 /* ExchangeCell.swift */,
+				52E14E7E20FDDFE700CA1F95 /* MenuCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		52E14E6D20FCE3C200CA1F95 /* ExchangeAppWidget */ = {
+			isa = PBXGroup;
+			children = (
+				52E14E6E20FCE3C200CA1F95 /* TodayViewController.swift */,
+				52E14E7020FCE3C200CA1F95 /* MainInterface.storyboard */,
+				52E14E7320FCE3C200CA1F95 /* Info.plist */,
+			);
+			path = ExchangeAppWidget;
+			sourceTree = "<group>";
+		};
+		52E14E7B20FDD56C00CA1F95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		52E14E8020FDE60800CA1F95 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */,
+				52E14E8420FDE63400CA1F95 /* UINavigationControllerExt.swift */,
+				52E14E8620FDE63400CA1F95 /* UITextFieldDesignable.swift */,
+				52E14E8320FDE63400CA1F95 /* UITextFieldExt.swift */,
+				52E14E8520FDE63400CA1F95 /* UITextViewDesignable.swift */,
+				52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */,
+			);
+			path = Designables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,18 +285,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52E14E4120F89DA500CA1F95 /* Build configuration list for PBXNativeTarget "ExchangeApp" */;
 			buildPhases = (
+				5FC49EA71F45C2522D73A752 /* [CP] Check Pods Manifest.lock */,
 				52E14E2B20F89DA400CA1F95 /* Sources */,
 				52E14E2C20F89DA400CA1F95 /* Frameworks */,
 				52E14E2D20F89DA400CA1F95 /* Resources */,
+				43A2DA34467B986D34432FDD /* [CP] Embed Pods Frameworks */,
+				F3B447CFEBEF897E093277FC /* [CP] Copy Pods Resources */,
+				52E14E7A20FCE3C200CA1F95 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52E14E7520FCE3C200CA1F95 /* PBXTargetDependency */,
 			);
 			name = ExchangeApp;
 			productName = ExchangeApp;
 			productReference = 52E14E2F20F89DA400CA1F95 /* ExchangeApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		52E14E6920FCE3C200CA1F95 /* ExchangeAppWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E14E7720FCE3C200CA1F95 /* Build configuration list for PBXNativeTarget "ExchangeAppWidget" */;
+			buildPhases = (
+				52E14E6620FCE3C200CA1F95 /* Sources */,
+				52E14E6720FCE3C200CA1F95 /* Frameworks */,
+				52E14E6820FCE3C200CA1F95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExchangeAppWidget;
+			productName = ExchangeAppWidget;
+			productReference = 52E14E6A20FCE3C200CA1F95 /* ExchangeAppWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,6 +331,9 @@
 				ORGANIZATIONNAME = "Cemal BAYRI";
 				TargetAttributes = {
 					52E14E2E20F89DA400CA1F95 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					52E14E6920FCE3C200CA1F95 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -179,6 +352,7 @@
 			projectRoot = "";
 			targets = (
 				52E14E2E20F89DA400CA1F95 /* ExchangeApp */,
+				52E14E6920FCE3C200CA1F95 /* ExchangeAppWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -194,25 +368,121 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52E14E6820FCE3C200CA1F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E14E7220FCE3C200CA1F95 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43A2DA34467B986D34432FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC49EA71F45C2522D73A752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExchangeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B447CFEBEF897E093277FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52E14E2B20F89DA400CA1F95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E14E8C20FDE63400CA1F95 /* UITextFieldDesignable.swift in Sources */,
 				52E14E5920F8E9CA00CA1F95 /* ExchangeCell.swift in Sources */,
+				52BAE52520FF609800F0D72F /* CryptoCoinViewModel.swift in Sources */,
+				52E14E5B20FCA6BA00CA1F95 /* ExchangeViewModel.swift in Sources */,
+				52E14E9220FE126300CA1F95 /* Models.swift in Sources */,
+				52E14E6320FCB51600CA1F95 /* Loading.swift in Sources */,
 				52E14E5220F8C83900CA1F95 /* DismissMenuAnimator.swift in Sources */,
 				52E14E5020F8C83900CA1F95 /* MenuHelper.swift in Sources */,
+				52E14E9620FE182F00CA1F95 /* BaseViewModel.swift in Sources */,
+				52E14E8E20FDFB0200CA1F95 /* FilterButtton.swift in Sources */,
+				52E14E8B20FDE63400CA1F95 /* UITextViewDesignable.swift in Sources */,
 				52E14E3520F89DA400CA1F95 /* MainVC.swift in Sources */,
+				52E14E8820FDE63400CA1F95 /* UIButtonDesignable.swift in Sources */,
 				52E14E3320F89DA400CA1F95 /* AppDelegate.swift in Sources */,
+				52E14E5F20FCAD4F00CA1F95 /* BaseRequest.swift in Sources */,
+				52E14E8920FDE63400CA1F95 /* UITextFieldExt.swift in Sources */,
+				52E14E8A20FDE63400CA1F95 /* UINavigationControllerExt.swift in Sources */,
+				52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */,
+				52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */,
+				52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */,
+				52E14E7D20FDD58A00CA1F95 /* UIViewController-Ext.swift in Sources */,
 				52E14E4F20F8C83900CA1F95 /* PresentMenuAnimator.swift in Sources */,
+				52E14E6120FCB1B100CA1F95 /* Global.swift in Sources */,
+				52E14E7F20FDDFE700CA1F95 /* MenuCell.swift in Sources */,
 				52E14E5120F8C83900CA1F95 /* Interactor.swift in Sources */,
 				52E14E4520F8C02400CA1F95 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52E14E6620FCE3C200CA1F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E14E6F20FCE3C200CA1F95 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E14E7520FCE3C200CA1F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E14E6920FCE3C200CA1F95 /* ExchangeAppWidget */;
+			targetProxy = 52E14E7420FCE3C200CA1F95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		52E14E3620F89DA400CA1F95 /* Main.storyboard */ = {
@@ -229,6 +499,14 @@
 				52E14E3C20F89DA500CA1F95 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52E14E7020FCE3C200CA1F95 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E14E7120FCE3C200CA1F95 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,11 +628,14 @@
 		};
 		52E14E4220F89DA500CA1F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCFDLZ395L;
 				INFOPLIST_FILE = ExchangeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,17 +649,58 @@
 		};
 		52E14E4320F89DA500CA1F95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCFDLZ395L;
 				INFOPLIST_FILE = ExchangeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.ExchangeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52E14E7820FCE3C200CA1F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCFDLZ395L;
+				INFOPLIST_FILE = ExchangeAppWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.ExchangeApp.ExchangeAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52E14E7920FCE3C200CA1F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCFDLZ395L;
+				INFOPLIST_FILE = ExchangeAppWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.ExchangeApp.ExchangeAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -401,6 +723,15 @@
 			buildConfigurations = (
 				52E14E4220F89DA500CA1F95 /* Debug */,
 				52E14E4320F89DA500CA1F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E14E7720FCE3C200CA1F95 /* Build configuration list for PBXNativeTarget "ExchangeAppWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E14E7820FCE3C200CA1F95 /* Debug */,
+				52E14E7920FCE3C200CA1F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

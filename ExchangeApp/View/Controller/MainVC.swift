@@ -16,11 +16,23 @@ protocol MenuActionDelegate {
 class MainVC: UIViewController {
     
     @IBOutlet weak var tbExchanges: UITableView!
+    @IBOutlet weak var menuView: UIViewDesignable!
+    
     
     let interactor = Interactor()
-
+    //let exViewModel = ExchangeViewModel()
+    var model: BaseModel!
+    let refresh = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        model = BaseModel()
+        fetchData()
     }
     
     @IBAction func edgeGesture(_ sender: UIScreenEdgePanGestureRecognizer) {
@@ -51,23 +63,49 @@ class MainVC: UIViewController {
     private func setupTableView() {
         tbExchanges.delegate = self
         tbExchanges.dataSource = self
+        refresh.addTarget(self, action: #selector(self.fetchData), for: .valueChanged)
+        self.tbExchanges.addSubview(refresh)
+    }
+    
+    @objc private func fetchData() {
+        model.get { (result) in
+            if result {
+                self.refresh.endRefreshing()
+                self.tbExchanges.reloadData()
+            }
+        }
+    }
+    
+    @IBAction func btnFilterAction(_ sender: FilterButtton) {
+        UIView.animate(withDuration: 0.2) {
+            if self.menuView.transform == .identity {
+                self.menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+                
+            } else {
+                self.menuView.transform = .identity
+            }
+        }
     }
     
 }
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return model.getObjectCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        if let models = model.models {
+           return model.viewModel.fillCell(indexPath, self.tbExchanges, model: models)
+        } else {
+            return ExchangeCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }
-
-
-
-
 
 extension MainVC: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
