@@ -28,11 +28,15 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupTableView()
         menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        model = BaseModel()
-        fetchData()
+       directPageOrStayHere()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        model.models = []
     }
     
     @IBAction func edgeGesture(_ sender: UIScreenEdgePanGestureRecognizer) {
@@ -65,6 +69,17 @@ class MainVC: UIViewController {
         tbExchanges.dataSource = self
         refresh.addTarget(self, action: #selector(self.fetchData), for: .valueChanged)
         self.tbExchanges.addSubview(refresh)
+    }
+    
+    private func directPageOrStayHere() {
+        if selection == .exchangeConvertor {
+            self.performSegue(withIdentifier: "convert", sender: self)
+        } else if selection == .alarms {
+            
+        } else {
+            model = BaseModel()
+            fetchData()
+        }
     }
     
     @objc private func fetchData() {

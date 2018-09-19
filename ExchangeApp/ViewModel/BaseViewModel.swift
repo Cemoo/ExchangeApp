@@ -35,6 +35,7 @@ class BaseModel {
             viewModel = CryptoCoinViewModel()
             break
         default:
+            viewModel = ExchangeViewModel()
             break
         }
     }

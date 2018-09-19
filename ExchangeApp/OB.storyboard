@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iXa-dN-1hz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On BoardingVC-->
+        <scene sceneID="m6r-na-Cts">
+            <objects>
+                <viewController id="iXa-dN-1hz" customClass="OnBoardingVC" customModule="ExchangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g9y-jq-GEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5n-Ev-n0j">
+                                <rect key="frame" x="131" y="302" width="113" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="aEq-fx-qyx">
+                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T2r-bD-bUT"/>
+                                    <constraint firstAttribute="width" constant="128" id="uCb-F6-85f"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.20000000000000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aEq-fx-qyx" firstAttribute="centerY" secondItem="g9y-jq-GEP" secondAttribute="centerY" id="7CN-lq-ZKT"/>
+                            <constraint firstItem="D5n-Ev-n0j" firstAttribute="centerX" secondItem="g9y-jq-GEP" secondAttribute="centerX" id="NCh-e4-4d7"/>
+                            <constraint firstItem="aEq-fx-qyx" firstAttribute="centerX" secondItem="g9y-jq-GEP" secondAttribute="centerX" id="huN-yx-cQw"/>
+                            <constraint firstItem="D5n-Ev-n0j" firstAttribute="centerY" secondItem="g9y-jq-GEP" secondAttribute="centerY" id="pyE-S2-VjA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vXu-hU-tu2"/>
+                    </view>
+                    <connections>
+                        <outlet property="horizontalConst" destination="7CN-lq-ZKT" id="xBK-P1-XAj"/>
+                        <outlet property="horizontalConstTitle" destination="pyE-S2-VjA" id="AKV-4f-EEt"/>
+                        <outlet property="imgLogo" destination="aEq-fx-qyx" id="BHL-7N-R5M"/>
+                        <outlet property="lblTitle" destination="D5n-Ev-n0j" id="6IS-6U-S1A"/>
+                        <segue destination="xTB-e9-EqX" kind="presentation" identifier="main" id="F3h-Yh-jck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEL-Y7-uAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Main-->
+        <scene sceneID="py1-kV-Mxl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="xTB-e9-EqX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29k-gZ-tIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group" width="128" height="128"/>
+    </resources>
+</document>

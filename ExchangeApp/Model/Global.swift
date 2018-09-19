@@ -28,7 +28,7 @@ var cryptoUrl: URL = URL(string: "https://www.doviz.com/api/v1/coins/all/latest"
 var loadingInstance = Loading.shared
 
 enum MenuSelection {
-    case exchange, gold, stockMarket, crypto, exchangeConvertor, alarms
+    case exchange, gold, stockMarket, crypto, exchangeConvertor, alarms,none
 }
 
 var selection: MenuSelection = .exchange

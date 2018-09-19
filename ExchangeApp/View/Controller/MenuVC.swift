@@ -60,6 +60,10 @@ class MenuVC: UIViewController {
         }
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        selection = .none
+    }
+    
 }
 
 extension MenuVC: UITableViewDelegate, UITableViewDataSource {
@@ -93,13 +97,13 @@ extension MenuVC: UITableViewDelegate, UITableViewDataSource {
             selection = MenuSelection.crypto
             break
         case 4:
-            selection = MenuSelection.exchange
-            break
-        case 5:
             selection = MenuSelection.exchangeConvertor
             break
-        default:
+        case 5:
             selection = MenuSelection.alarms
+            break
+        default:
+            selection = MenuSelection.exchange
             break
         }
         

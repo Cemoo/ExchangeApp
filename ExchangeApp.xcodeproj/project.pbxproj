@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */; };
 		52BAE52520FF609800F0D72F /* CryptoCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAE52420FF609800F0D72F /* CryptoCoinViewModel.swift */; };
+		52BAE527210088D300F0D72F /* ExchangeConvertorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BAE526210088D300F0D72F /* ExchangeConvertorVC.swift */; };
 		52E14E3320F89DA400CA1F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E3220F89DA400CA1F95 /* AppDelegate.swift */; };
 		52E14E3520F89DA400CA1F95 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E3420F89DA400CA1F95 /* MainVC.swift */; };
 		52E14E3820F89DA400CA1F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E14E3620F89DA400CA1F95 /* Main.storyboard */; };
@@ -40,6 +41,22 @@
 		52E14E9220FE126300CA1F95 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9120FE126300CA1F95 /* Models.swift */; };
 		52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */; };
 		52E14E9620FE182F00CA1F95 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */; };
+		52FE7BE021527362008D0F70 /* OB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BDF21527362008D0F70 /* OB.storyboard */; };
+		52FE7BE2215273AF008D0F70 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE7BE1215273AF008D0F70 /* OnBoardingVC.swift */; };
+		52FE7BEC21527692008D0F70 /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE521527691008D0F70 /* Dosis-ExtraLight.ttf */; };
+		52FE7BED21527692008D0F70 /* Dosis-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE521527691008D0F70 /* Dosis-ExtraLight.ttf */; };
+		52FE7BEE21527692008D0F70 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE621527691008D0F70 /* Dosis-Bold.ttf */; };
+		52FE7BEF21527692008D0F70 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE621527691008D0F70 /* Dosis-Bold.ttf */; };
+		52FE7BF021527692008D0F70 /* Dosis-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE721527691008D0F70 /* Dosis-ExtraBold.ttf */; };
+		52FE7BF121527692008D0F70 /* Dosis-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE721527691008D0F70 /* Dosis-ExtraBold.ttf */; };
+		52FE7BF221527692008D0F70 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE821527691008D0F70 /* Dosis-Light.ttf */; };
+		52FE7BF321527692008D0F70 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE821527691008D0F70 /* Dosis-Light.ttf */; };
+		52FE7BF421527692008D0F70 /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE921527691008D0F70 /* Dosis-Medium.ttf */; };
+		52FE7BF521527692008D0F70 /* Dosis-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BE921527691008D0F70 /* Dosis-Medium.ttf */; };
+		52FE7BF621527692008D0F70 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEA21527692008D0F70 /* Dosis-Regular.ttf */; };
+		52FE7BF721527692008D0F70 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEA21527692008D0F70 /* Dosis-Regular.ttf */; };
+		52FE7BF821527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
+		52FE7BF921527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
 		627E27C583736F373AFC6489 /* Pods_ExchangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +87,7 @@
 /* Begin PBXFileReference section */
 		52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketViewModel.swift; sourceTree = "<group>"; };
 		52BAE52420FF609800F0D72F /* CryptoCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinViewModel.swift; sourceTree = "<group>"; };
+		52BAE526210088D300F0D72F /* ExchangeConvertorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeConvertorVC.swift; sourceTree = "<group>"; };
 		52E14E2F20F89DA400CA1F95 /* ExchangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E14E3220F89DA400CA1F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E14E3420F89DA400CA1F95 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -104,6 +122,15 @@
 		52E14E9120FE126300CA1F95 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldViewModel.swift; sourceTree = "<group>"; };
 		52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		52FE7BDF21527362008D0F70 /* OB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OB.storyboard; sourceTree = "<group>"; };
+		52FE7BE1215273AF008D0F70 /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		52FE7BE521527691008D0F70 /* Dosis-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraLight.ttf"; sourceTree = "<group>"; };
+		52FE7BE621527691008D0F70 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
+		52FE7BE721527691008D0F70 /* Dosis-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraBold.ttf"; sourceTree = "<group>"; };
+		52FE7BE821527691008D0F70 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.ttf"; sourceTree = "<group>"; };
+		52FE7BE921527691008D0F70 /* Dosis-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.ttf"; sourceTree = "<group>"; };
+		52FE7BEA21527692008D0F70 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
+		52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
 		64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.release.xcconfig"; sourceTree = "<group>"; };
 		DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +207,7 @@
 				52E14E3620F89DA400CA1F95 /* Main.storyboard */,
 				52E14E3920F89DA500CA1F95 /* Assets.xcassets */,
 				52E14E3B20F89DA500CA1F95 /* LaunchScreen.storyboard */,
+				52FE7BDF21527362008D0F70 /* OB.storyboard */,
 				52E14E3E20F89DA500CA1F95 /* Info.plist */,
 				52E14E8D20FDFB0200CA1F95 /* FilterButtton.swift */,
 			);
@@ -223,6 +251,7 @@
 		52E14E5520F8DB7100CA1F95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52FE7BE421527683008D0F70 /* Fonts */,
 				52E14E5720F8DB7A00CA1F95 /* Cell */,
 				52E14E5620F8DB7500CA1F95 /* Controller */,
 			);
@@ -234,6 +263,8 @@
 			children = (
 				52E14E3420F89DA400CA1F95 /* MainVC.swift */,
 				52E14E4420F8C02400CA1F95 /* MenuVC.swift */,
+				52BAE526210088D300F0D72F /* ExchangeConvertorVC.swift */,
+				52FE7BE1215273AF008D0F70 /* OnBoardingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +307,20 @@
 				52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */,
 			);
 			path = Designables;
+			sourceTree = "<group>";
+		};
+		52FE7BE421527683008D0F70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52FE7BE621527691008D0F70 /* Dosis-Bold.ttf */,
+				52FE7BE721527691008D0F70 /* Dosis-ExtraBold.ttf */,
+				52FE7BE521527691008D0F70 /* Dosis-ExtraLight.ttf */,
+				52FE7BE821527691008D0F70 /* Dosis-Light.ttf */,
+				52FE7BE921527691008D0F70 /* Dosis-Medium.ttf */,
+				52FE7BEA21527692008D0F70 /* Dosis-Regular.ttf */,
+				52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +407,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FE7BEE21527692008D0F70 /* Dosis-Bold.ttf in Resources */,
+				52FE7BEC21527692008D0F70 /* Dosis-ExtraLight.ttf in Resources */,
+				52FE7BF221527692008D0F70 /* Dosis-Light.ttf in Resources */,
+				52FE7BF821527692008D0F70 /* Dosis-SemiBold.ttf in Resources */,
 				52E14E3D20F89DA500CA1F95 /* LaunchScreen.storyboard in Resources */,
+				52FE7BE021527362008D0F70 /* OB.storyboard in Resources */,
+				52FE7BF421527692008D0F70 /* Dosis-Medium.ttf in Resources */,
+				52FE7BF621527692008D0F70 /* Dosis-Regular.ttf in Resources */,
+				52FE7BF021527692008D0F70 /* Dosis-ExtraBold.ttf in Resources */,
 				52E14E3A20F89DA500CA1F95 /* Assets.xcassets in Resources */,
 				52E14E3820F89DA400CA1F95 /* Main.storyboard in Resources */,
 			);
@@ -372,7 +425,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FE7BF721527692008D0F70 /* Dosis-Regular.ttf in Resources */,
+				52FE7BEF21527692008D0F70 /* Dosis-Bold.ttf in Resources */,
 				52E14E7220FCE3C200CA1F95 /* MainInterface.storyboard in Resources */,
+				52FE7BF521527692008D0F70 /* Dosis-Medium.ttf in Resources */,
+				52FE7BF921527692008D0F70 /* Dosis-SemiBold.ttf in Resources */,
+				52FE7BED21527692008D0F70 /* Dosis-ExtraLight.ttf in Resources */,
+				52FE7BF321527692008D0F70 /* Dosis-Light.ttf in Resources */,
+				52FE7BF121527692008D0F70 /* Dosis-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E14E8C20FDE63400CA1F95 /* UITextFieldDesignable.swift in Sources */,
+				52FE7BE2215273AF008D0F70 /* OnBoardingVC.swift in Sources */,
 				52E14E5920F8E9CA00CA1F95 /* ExchangeCell.swift in Sources */,
 				52BAE52520FF609800F0D72F /* CryptoCoinViewModel.swift in Sources */,
 				52E14E5B20FCA6BA00CA1F95 /* ExchangeViewModel.swift in Sources */,
@@ -454,6 +515,7 @@
 				52E14E5F20FCAD4F00CA1F95 /* BaseRequest.swift in Sources */,
 				52E14E8920FDE63400CA1F95 /* UITextFieldExt.swift in Sources */,
 				52E14E8A20FDE63400CA1F95 /* UINavigationControllerExt.swift in Sources */,
+				52BAE527210088D300F0D72F /* ExchangeConvertorVC.swift in Sources */,
 				52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */,
 				52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */,
 				52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */,
@@ -633,7 +695,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCFDLZ395L;
+				DEVELOPMENT_TEAM = 9568NU2TH9;
 				INFOPLIST_FILE = ExchangeApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,7 +716,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCFDLZ395L;
+				DEVELOPMENT_TEAM = 9568NU2TH9;
 				INFOPLIST_FILE = ExchangeApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,7 +734,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCFDLZ395L;
+				DEVELOPMENT_TEAM = 9568NU2TH9;
 				INFOPLIST_FILE = ExchangeAppWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,7 +753,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TCFDLZ395L;
+				DEVELOPMENT_TEAM = 9568NU2TH9;
 				INFOPLIST_FILE = ExchangeAppWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
