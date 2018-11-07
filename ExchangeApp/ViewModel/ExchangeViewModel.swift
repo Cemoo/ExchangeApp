@@ -23,7 +23,12 @@ class ExchangeViewModel: BaseViewModel {
     }
     
     func getObjectCount() -> Int {
-        return self.exchange.count
+        if self.exchange.count > 0 {
+             return self.exchange.count
+        } else {
+            return 1
+        }
+       
     }
     
    

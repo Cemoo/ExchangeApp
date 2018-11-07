@@ -28,8 +28,10 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupTableView()
         menuView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        
+       // view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
        directPageOrStayHere()
@@ -69,6 +71,7 @@ class MainVC: UIViewController {
         tbExchanges.dataSource = self
         refresh.addTarget(self, action: #selector(self.fetchData), for: .valueChanged)
         self.tbExchanges.addSubview(refresh)
+        
     }
     
     private func directPageOrStayHere() {
@@ -102,6 +105,12 @@ class MainVC: UIViewController {
         }
     }
     
+}
+
+extension MainVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
 }
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {

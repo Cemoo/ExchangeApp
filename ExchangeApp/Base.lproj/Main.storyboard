@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuD-KD-pAy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuD-KD-pAy">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-Uy-W29">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="nRj-TB-IYc" customClass="ExchangeCell" customModule="ExchangeApp" customModuleProvider="target">
@@ -47,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95k-hD-p6L">
-                                                    <rect key="frame" x="93.5" y="50" width="102.5" height="21"/>
+                                                    <rect key="frame" x="94" y="49.5" width="102" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="UfW-86-PdM"/>
                                                     </constraints>
@@ -79,7 +78,7 @@
                                 <rect key="frame" x="86" y="334" width="340" height="340"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6p-2P-63M" customClass="UIButtonDesignable" customModule="ExchangeApp" customModuleProvider="target">
-                                        <rect key="frame" x="148.5" y="24" width="54" height="54"/>
+                                        <rect key="frame" x="148" y="24" width="54" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="54" id="Ou9-Ll-Vvw"/>
@@ -99,7 +98,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-M7-HLh" customClass="UIButtonDesignable" customModule="ExchangeApp" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="148.5" width="54" height="54"/>
+                                        <rect key="frame" x="24" y="148" width="54" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="54" id="fez-6C-jj3"/>
@@ -162,16 +161,29 @@
                                     <action selector="btnFilterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTi-Xd-4ga"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="e2s-02-6AJ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="56"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.42352941179999998" green="0.20000000000000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="x6p-2P-63M" firstAttribute="centerX" secondItem="s0r-yf-LNZ" secondAttribute="centerX" id="0GM-5y-38q"/>
+                            <constraint firstItem="e2s-02-6AJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dog-db-WVJ"/>
                             <constraint firstAttribute="bottom" secondItem="axd-Nl-DQM" secondAttribute="bottom" constant="-106" id="Lj2-66-kJT"/>
                             <constraint firstItem="HAh-Uy-W29" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NmL-Fv-PiE"/>
-                            <constraint firstItem="HAh-Uy-W29" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PGV-rA-A0e"/>
                             <constraint firstItem="wTR-M7-HLh" firstAttribute="centerY" secondItem="s0r-yf-LNZ" secondAttribute="centerY" id="VA7-rw-6z0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s0r-yf-LNZ" secondAttribute="trailing" constant="24" id="WoR-NO-NTX"/>
+                            <constraint firstItem="e2s-02-6AJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="alN-93-6rl"/>
+                            <constraint firstItem="HAh-Uy-W29" firstAttribute="top" secondItem="e2s-02-6AJ" secondAttribute="bottom" id="bXy-Kn-bsh"/>
+                            <constraint firstItem="e2s-02-6AJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cBa-st-7K8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s0r-yf-LNZ" secondAttribute="bottom" constant="24" id="jtP-ez-VAf"/>
                             <constraint firstAttribute="trailing" secondItem="axd-Nl-DQM" secondAttribute="trailing" constant="-106" id="kfd-lJ-6Jf"/>
                             <constraint firstItem="HAh-Uy-W29" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ndw-Gj-aUW"/>
@@ -226,7 +238,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-NX-Qj3">
-                                        <rect key="frame" x="68" y="40" width="212" height="21"/>
+                                        <rect key="frame" x="68" y="39.5" width="212" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="ybm-6i-FPx"/>
                                         </constraints>
@@ -285,7 +297,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-du-z9p">
-                                        <rect key="frame" x="68" y="40" width="212" height="21"/>
+                                        <rect key="frame" x="68" y="39.5" width="212" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="vfm-47-cnx"/>
                                         </constraints>
@@ -456,6 +468,7 @@
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.42352941176470588" green="0.20000000000000001" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
