@@ -46,8 +46,8 @@ extension UITextField {
      */
     func setLetterSpacing(_ spaceValue: CGFloat){
         let attributedString = NSMutableAttributedString(string: self.text!)
-        attributedString.addAttribute(NSAttributedStringKey.kern, value: spaceValue, range: NSRange(location: 0, length: attributedString.length))
-        attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: self.textColor!, range: NSRange(location: 0, length: attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.kern, value: spaceValue, range: NSRange(location: 0, length: attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: self.textColor!, range: NSRange(location: 0, length: attributedString.length))
         self.attributedText = attributedString
     }
  

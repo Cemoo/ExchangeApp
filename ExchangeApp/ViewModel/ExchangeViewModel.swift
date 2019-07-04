@@ -94,9 +94,6 @@ class ExchangeViewModel: BaseViewModel {
         case "LYD":
             cell.imgCurrency.image = #imageLiteral(resourceName: "libya")
             break
-        case "SAR":
-            cell.imgCurrency.image = #imageLiteral(resourceName: "saudiarabia")
-            break
         case "IQD":
             cell.imgCurrency.image = #imageLiteral(resourceName: "iraq")
             break

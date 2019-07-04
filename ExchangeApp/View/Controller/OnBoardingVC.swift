@@ -54,6 +54,14 @@ class OnBoardingVC: UIViewController {
         self.imgLogo.layer.add(animation, forKey: "position")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "main" {
+            let dest = segue.destination as! UINavigationController
+            let mainVC = dest.viewControllers.first as! MainVC
+            mainVC.model = CurrencyViewModel(type: .doviz)
+        }
+    }
+    
     
 
 

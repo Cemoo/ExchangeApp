@@ -12,12 +12,8 @@ let manager = Alamofire.SessionManager.default
 
 func baseRequest(params: [String: Any]? = nil, requestURL: URL = exchangeUrl, method: HTTPMethod = .get, encoding: ParameterEncoding = JSONEncoding.default, completion: @escaping (Data?) ->()) {
     manager.session.configuration.timeoutIntervalForRequest = 30
-    Loading.show()
     let headers: HTTPHeaders = ["Content-Type":"application/json"]
-    print(requestURL.absoluteString)
-    print(method)
     manager.request(requestURL, method: method, parameters: params, encoding: encoding, headers: headers).responseJSON { (response) in
-        Loading.hide()
         if isInternetAvailable() {
             if let data = response.data {
                 switch response.result {

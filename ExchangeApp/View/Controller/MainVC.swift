@@ -21,7 +21,19 @@ class MainVC: UIViewController {
     
     let interactor = Interactor()
     //let exViewModel = ExchangeViewModel()
-    var model: BaseModel!
+    
+    var model: CurrencyViewModelProtocol! {
+        didSet {
+            model.delegate = self
+        }
+    }
+    
+    internal var currencies: [Currency] = [] {
+        didSet {
+            self.tbExchanges.reloadData()
+        }
+    }
+    
     let refresh = UIRefreshControl()
     
     override func viewDidLoad() {
@@ -32,13 +44,12 @@ class MainVC: UIViewController {
     }
     
     
-    
     override func viewWillAppear(_ animated: Bool) {
        directPageOrStayHere()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        model.models = []
+        //model.models = []
     }
     
     @IBAction func edgeGesture(_ sender: UIScreenEdgePanGestureRecognizer) {
@@ -78,20 +89,14 @@ class MainVC: UIViewController {
         if selection == .exchangeConvertor {
             self.performSegue(withIdentifier: "convert", sender: self)
         } else if selection == .alarms {
-            
+            fetchData()
         } else {
-            model = BaseModel()
             fetchData()
         }
     }
     
     @objc private func fetchData() {
-        model.get { (result) in
-            if result {
-                self.refresh.endRefreshing()
-                self.tbExchanges.reloadData()
-            }
-        }
+        model.load()
     }
     
     @IBAction func btnFilterAction(_ sender: FilterButtton) {
@@ -107,6 +112,20 @@ class MainVC: UIViewController {
     
 }
 
+extension MainVC: ServiceOutputDelegate {
+    func handleViewModelOutput(_ output: ServiceOutput) {
+        switch output {
+        case .showLoading(let res):
+           UIApplication.shared.isNetworkActivityIndicatorVisible = res
+        case .showData(let data):
+            currencies = data
+            refresh.endRefreshing()
+        case .showError(let err):
+            print(err)
+        }
+    }
+}
+
 extension MainVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
@@ -115,15 +134,14 @@ extension MainVC: UISearchResultsUpdating {
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.getObjectCount()
+        return currencies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let models = model.models {
-           return model.viewModel.fillCell(indexPath, self.tbExchanges, model: models)
-        } else {
-            return ExchangeCell()
-        }
+        let cell = tbExchanges.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExchangeCell
+        cell.lblCurrenyName.text = currencies[indexPath.row].name ?? ""
+        cell.lblCurAmount.text = "\(currencies[indexPath.row].buyPrice ?? 0.0)"
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

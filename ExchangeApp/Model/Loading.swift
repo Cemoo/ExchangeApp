@@ -8,7 +8,7 @@ open class Loading: UIView {
     /// Loading view will be used as transparent background
     let loadingView = UIView()
     /// An activity indicator to show user the app has no crash or freeze sitution.
-    let actInd = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+    let actInd = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
     
     /// Loading Singleton
     open class var shared: Loading {

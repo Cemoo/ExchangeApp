@@ -24,6 +24,10 @@ var goldUrl: URL = URL(string: "https://www.doviz.com/api/v1/golds/all/latest")!
 var stockMarketUrl: URL = URL(string: "https://www.doviz.com/api/v1/indexes/all/latest")!
 var cryptoUrl: URL = URL(string: "https://www.doviz.com/api/v1/coins/all/latest")!
 
+let dovizUrlStr: String = "https://api.canlidoviz.com/web/items?marketId=1&type=0"
+let altinUrlStr: String = "https://api.canlidoviz.com/web/items?marketId=1&type=1"
+let kriptoUrlStr: String = "https://api.canlidoviz.com/web/items?marketId=1&type=2"
+
 
 var loadingInstance = Loading.shared
 
@@ -292,8 +296,8 @@ func isContainsSpecialCharacters(_ text:String) -> Bool {
  - Returns: UIAlertController
  */
 func genericAlert(_ title: String, message: String, buttonText: String) -> UIAlertController {
-    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-    alert.addAction(UIAlertAction(title: buttonText, style: UIAlertActionStyle.default, handler: nil))
+    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+    alert.addAction(UIAlertAction(title: buttonText, style: UIAlertAction.Style.default, handler: nil))
     return alert
 }
 
@@ -377,13 +381,6 @@ func localize(_ withKey: String) -> String {
  
  - Returns: [UInt8]
  */
-func convertImageToByteArray(image: UIImage, compression: CGFloat) -> [UInt8] {
-    let data: Data = UIImageJPEGRepresentation(image, compression)!
-    let count = data.count / MemoryLayout<UInt8>.size
-    var array = [UInt8](repeating: 0, count: count)
-    data.copyBytes(to: &array, count:count * MemoryLayout<UInt8>.size)
-    return array
-}
 
 /**
  Crops image to square

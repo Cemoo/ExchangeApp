@@ -29,7 +29,6 @@
 		52E14E6F20FCE3C200CA1F95 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E6E20FCE3C200CA1F95 /* TodayViewController.swift */; };
 		52E14E7220FCE3C200CA1F95 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E14E7020FCE3C200CA1F95 /* MainInterface.storyboard */; };
 		52E14E7620FCE3C200CA1F95 /* ExchangeAppWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52E14E6A20FCE3C200CA1F95 /* ExchangeAppWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		52E14E7D20FDD58A00CA1F95 /* UIViewController-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */; };
 		52E14E7F20FDDFE700CA1F95 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E7E20FDDFE700CA1F95 /* MenuCell.swift */; };
 		52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */; };
 		52E14E8820FDE63400CA1F95 /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */; };
@@ -58,6 +57,8 @@
 		52FE7BF821527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
 		52FE7BF921527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
 		627E27C583736F373AFC6489 /* Pods_ExchangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */; };
+		D074EC9922C0185F007A0DE5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074EC9822C0185F007A0DE5 /* Currency.swift */; };
+		D074EC9B22C01AD2007A0DE5 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074EC9A22C01AD2007A0DE5 /* CurrencyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,6 @@
 		52E14E6E20FCE3C200CA1F95 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		52E14E7120FCE3C200CA1F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		52E14E7320FCE3C200CA1F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Ext.swift"; sourceTree = "<group>"; };
 		52E14E7E20FDDFE700CA1F95 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDesignable.swift; sourceTree = "<group>"; };
 		52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
@@ -133,6 +133,8 @@
 		52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
 		64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D074EC9822C0185F007A0DE5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		D074EC9A22C01AD2007A0DE5 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 				52E14E6020FCB1B100CA1F95 /* Global.swift */,
 				52E14E5E20FCAD4F00CA1F95 /* BaseRequest.swift */,
 				52E14E9120FE126300CA1F95 /* Models.swift */,
+				D074EC9822C0185F007A0DE5 /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				52E14E5A20FCA6BA00CA1F95 /* ExchangeViewModel.swift */,
+				D074EC9A22C01AD2007A0DE5 /* CurrencyViewModel.swift */,
 				52E14E9320FE131B00CA1F95 /* GoldViewModel.swift */,
 				52E14E9520FE182F00CA1F95 /* BaseViewModel.swift */,
 				52BAE52220FF570A00F0D72F /* StockMarketViewModel.swift */,
@@ -291,7 +295,6 @@
 		52E14E7B20FDD56C00CA1F95 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				52E14E7C20FDD58A00CA1F95 /* UIViewController-Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -498,10 +501,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E14E8C20FDE63400CA1F95 /* UITextFieldDesignable.swift in Sources */,
+				D074EC9B22C01AD2007A0DE5 /* CurrencyViewModel.swift in Sources */,
 				52FE7BE2215273AF008D0F70 /* OnBoardingVC.swift in Sources */,
 				52E14E5920F8E9CA00CA1F95 /* ExchangeCell.swift in Sources */,
 				52BAE52520FF609800F0D72F /* CryptoCoinViewModel.swift in Sources */,
 				52E14E5B20FCA6BA00CA1F95 /* ExchangeViewModel.swift in Sources */,
+				D074EC9922C0185F007A0DE5 /* Currency.swift in Sources */,
 				52E14E9220FE126300CA1F95 /* Models.swift in Sources */,
 				52E14E6320FCB51600CA1F95 /* Loading.swift in Sources */,
 				52E14E5220F8C83900CA1F95 /* DismissMenuAnimator.swift in Sources */,
@@ -519,7 +524,6 @@
 				52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */,
 				52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */,
 				52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */,
-				52E14E7D20FDD58A00CA1F95 /* UIViewController-Ext.swift in Sources */,
 				52E14E4F20F8C83900CA1F95 /* PresentMenuAnimator.swift in Sources */,
 				52E14E6120FCB1B100CA1F95 /* Global.swift in Sources */,
 				52E14E7F20FDDFE700CA1F95 /* MenuCell.swift in Sources */,
@@ -704,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.ExchangeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -725,7 +729,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemal.ExchangeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
