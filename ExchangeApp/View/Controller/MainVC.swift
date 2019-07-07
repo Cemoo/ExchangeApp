@@ -36,6 +36,7 @@ class MainVC: UIViewController {
     
     let refresh = UIRefreshControl()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -109,6 +110,7 @@ class MainVC: UIViewController {
             }
         }
     }
+
     
 }
 
@@ -141,6 +143,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tbExchanges.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExchangeCell
         cell.lblCurrenyName.text = currencies[indexPath.row].name ?? ""
         cell.lblCurAmount.text = "\(currencies[indexPath.row].buyPrice ?? 0.0)"
+        model.setFlagsFor(indexPath.row, cell, code: currencies[indexPath.row].code ?? "")
         return cell
     }
     
@@ -177,4 +180,3 @@ extension MainVC : MenuActionDelegate {
         self.performSegue(withIdentifier: "menu", sender: nil)
     }
 }
-

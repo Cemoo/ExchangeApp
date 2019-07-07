@@ -6,6 +6,8 @@ target 'ExchangeApp' do
   use_frameworks!
 
   # Pods for ExchangeApp
-pod 'Alamofire', '~> 4.7'
+pod 'Alamofire', '~> 5.0.0-beta.5'
+pod 'Google-Mobile-Ads-SDK'
+
 
 end

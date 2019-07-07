@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-let manager = Alamofire.SessionManager.default
+let manager = Alamofire.Session.default
 
 func baseRequest(params: [String: Any]? = nil, requestURL: URL = exchangeUrl, method: HTTPMethod = .get, encoding: ParameterEncoding = JSONEncoding.default, completion: @escaping (Data?) ->()) {
     manager.session.configuration.timeoutIntervalForRequest = 30
