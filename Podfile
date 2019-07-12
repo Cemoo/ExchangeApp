@@ -7,7 +7,6 @@ target 'ExchangeApp' do
 
   # Pods for ExchangeApp
 pod 'Alamofire', '~> 5.0.0-beta.5'
-pod 'Google-Mobile-Ads-SDK'
 
 
 end

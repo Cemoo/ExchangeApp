@@ -57,6 +57,7 @@
 		52FE7BF821527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
 		52FE7BF921527692008D0F70 /* Dosis-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */; };
 		627E27C583736F373AFC6489 /* Pods_ExchangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */; };
+		D0747BE022D2812200AB0AD0 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0747BDF22D2812200AB0AD0 /* IntExtension.swift */; };
 		D074EC9922C0185F007A0DE5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074EC9822C0185F007A0DE5 /* Currency.swift */; };
 		D074EC9B22C01AD2007A0DE5 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074EC9A22C01AD2007A0DE5 /* CurrencyViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -133,6 +134,7 @@
 		52FE7BEB21527692008D0F70 /* Dosis-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.ttf"; sourceTree = "<group>"; };
 		64C980458BC6808FB5084B61 /* Pods_ExchangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C303AAC043F75F48CAD417D2 /* Pods-ExchangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D0747BDF22D2812200AB0AD0 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		D074EC9822C0185F007A0DE5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		D074EC9A22C01AD2007A0DE5 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		DCA24D82A0AB6BAEBDD4DB62 /* Pods-ExchangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -295,6 +297,8 @@
 		52E14E7B20FDD56C00CA1F95 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				52E14E8320FDE63400CA1F95 /* UITextFieldExt.swift */,
+				D0747BDF22D2812200AB0AD0 /* IntExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -305,7 +309,6 @@
 				52E14E8220FDE63400CA1F95 /* UIButtonDesignable.swift */,
 				52E14E8420FDE63400CA1F95 /* UINavigationControllerExt.swift */,
 				52E14E8620FDE63400CA1F95 /* UITextFieldDesignable.swift */,
-				52E14E8320FDE63400CA1F95 /* UITextFieldExt.swift */,
 				52E14E8520FDE63400CA1F95 /* UITextViewDesignable.swift */,
 				52E14E8120FDE63400CA1F95 /* UIViewDesignable.swift */,
 			);
@@ -449,14 +452,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExchangeApp/Pods-ExchangeApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -511,6 +510,7 @@
 				52BAE527210088D300F0D72F /* ExchangeConvertorVC.swift in Sources */,
 				52E14E9420FE131B00CA1F95 /* GoldViewModel.swift in Sources */,
 				52BAE52320FF570A00F0D72F /* StockMarketViewModel.swift in Sources */,
+				D0747BE022D2812200AB0AD0 /* IntExtension.swift in Sources */,
 				52E14E8720FDE63400CA1F95 /* UIViewDesignable.swift in Sources */,
 				52E14E4F20F8C83900CA1F95 /* PresentMenuAnimator.swift in Sources */,
 				52E14E6120FCB1B100CA1F95 /* Global.swift in Sources */,
